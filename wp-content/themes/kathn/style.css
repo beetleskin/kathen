@@ -1,0 +1,406 @@
+/*
+Theme Name: Kathn (Central Child Theme)
+Author: stfn
+Description: A theme for Kathn
+Version: 0.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: central
+Text Domain:  central-child
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800);
+
+
+/* COLORS */
+body {
+	color: #636462 !important;
+	background-color: #EDEDED;
+}
+.current-menu-item, .current-post-item, .current-page-item, .current_menu_item, .current_post_item, .current_page_item {
+	border-color: #389D7D !important;
+	background: #CBCCCA;
+}
+
+a {
+	color: #389D7D;
+}
+
+#branding #headerimg h1#site-title a,
+#branding #headerimg h2#site-description {
+	color: #636462;
+}
+
+.slider-container {
+	border-top-color: #636462 !important;
+}
+.white-stripe {
+	border-color: #636462 !important;
+}
+
+.main-menu li a {
+	color: #636462;
+}
+
+
+
+
+/* GENERAL */
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	color: #636462;
+	font-weight: 300 !important;
+}
+
+table,
+td {
+	border: 0px !important;
+}
+
+tr {
+	border: 0px !important;
+	border-bottom: 1px solid #389D7D !important;
+}
+
+tr:last-child {
+	border-bottom: 0px !important;
+}
+
+ul.colored-list li {
+	color:#636462;
+	list-style:none;
+}
+
+ul.colored-list li:before {
+	color: #389D7D;
+	content: "•";
+	font-size: 2.5em;
+	padding-right: 0.15em;
+	position: relative;
+	top: 0.25em;
+}
+
+
+
+/* HEADER */
+#header-wrapper {
+    min-width: 940px;	
+	border-bottom: 2px solid #636462;
+}
+
+#branding {
+	height: 90px;
+}
+
+#branding .header-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 8px;
+	margin-right: 45px;
+}
+
+#branding .header-logo img {
+	height: 75px;
+}
+
+#branding #title-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 300;
+}
+
+#branding #headerimg h1#site-title {
+	display: inline-block;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+#branding #headerimg h2#site-description {
+	width: auto;
+	margin: 0;
+	border: none;
+	font-size: 1em;
+	text-align: left;
+}
+
+.slider-container {
+	
+}
+
+.slider-container > .main {
+	position: relative;
+}
+
+.slider-container #slides {
+	width: 940px;
+	height: 300px;
+	overlfow: hidden;
+}
+
+.phone-floater {
+	width: 206px;
+	height: 40px;
+	position: absolute;
+	top: -20px;
+	right: -18px;
+	z-index: 1000;
+	background: url("./images/phone_ribbon.svg");
+}
+
+.phone-floater a {
+	display: inline-block;
+	margin-left: 30px;
+	color: #FFF;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 33px;
+}
+
+
+/* MENU */
+.main-menu li a {
+	text-transform: uppercase;
+	margin: 20px 25px !important;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.current-menu-item, .current-post-item, .current-page-item, .current_menu_item, .current_post_item, .current_page_item {
+	border-bottom-width: 5px !important;
+}
+
+.main.nav .header-logo {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+	webkit-transition: opacity 1s;
+}
+
+.main.nav .header-logo img {
+	height: 30px;
+}
+
+/* sticky menu */
+.white-stripe.sticky-menu {
+	position: fixed;
+	z-index: 1000;
+	top: 0px;
+	left: -50%;
+	right: -50%;
+	margin-top: 0px;
+}
+
+.main-menu li a {
+	transition: margin 0.25s;
+	webkit-transition: margin 0.25s;
+}
+
+.sticky-menu .main-menu li a {
+	margin-top: 7px !important;
+	margin-bottom: 7px !important;
+	transition: all 0.25s;
+	webkit-transition: all 0.25s;
+}
+
+.sticky-menu .main.nav .header-logo {
+	opacity: 1;
+	transition: opacity 1s;
+	webkit-transition: opacity 1s;
+}
+
+
+/* CONTENT */
+.page-wrapper {
+	margin-bottom: 0px;
+}
+
+.main #content {
+	width: 940px;
+	min-height: 1000px;
+	margin-left: 0px !important;
+	padding: 0px;
+	border-radius: 0px;
+	background: none;
+}
+
+.main #content .post {
+	width: 100%;
+	margin: 0px;
+	box-shadow: none;
+	border: none;
+}
+
+.main #content .post .block-header {
+	margin-left: 0px !important;
+}
+
+.main #content .post .post-text {
+	margin: 0px;
+}
+
+.post {
+	width: 910px !important;
+	padding: 15px;
+	border-radius: 0px;
+	border: 1px solid #636462 !important;
+}
+
+.home .post {
+	width: 100% !important;
+	padding: 0px !important;
+	background: transparent !important;
+	border: 0px !important;
+}
+
+.post h2 {
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+.bottom-white-stripe {
+	height: auto;
+	background-color: #389D7D;
+	color: white;
+}
+
+.footer {
+	height: auto;
+	background: transparent;
+}
+
+.footer .copyright {
+	letter-spacing: 3px;
+	line-height: 3em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/* MAIN CONTENT PAGE */
+.post .opening-hours {
+	width: 100%;
+	margin: 30px 0px;
+	border: 0px;
+}
+
+.post .opening-hours tr td:first-child {
+	width: 100px;
+}
+
+.post .address {
+	margin-top: 3em;
+	font-style: normal;
+	line-height: 1.4em;
+}
+
+.post .address span {
+	margin-bottom: 0.3em;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+/* Kathn */
+#cv {
+	margin: 20px auto;
+	width: 70%;
+	line-height: 1.3em;
+}
+
+#qualifications {
+	margin: 20px auto;
+	width: 70%;
+	line-height: 1.3em;
+}
+
+/* ICONS */
+ul.iconized-list {
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+ul.iconized-list li {
+	margin: 25px 50px 25px 30px;
+	white-space: nowrap;
+}
+
+ul.iconized-list li > .icon,
+ul.iconized-list li > .icon-text {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+}
+
+ul.iconized-list li > .icon-text {
+	width: 80%;
+	font-size: 1.2em;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	margin-right: 30px;
+	border-radius: 50%;
+	border: 2px solid #389D7D;
+	background: transparent url("images/icons/caduceus4.svg") no-repeat scroll 50% 50%;
+	background-size: 80% 80%;
+}
+
+.icon sv
+
+/* ICONS */
+.icon.icon-patient1 { background-image: url("images/icons/patient1.svg") }
+.icon.icon-eye90 { background-image: url("images/icons/eye90.svg") }
+.icon.icon-blood12 { background-image: url("images/icons/blood12.svg") }
+.icon.icon-microscope13 { background-image: url("images/icons/microscope13.svg") }
+.icon.icon-injection5 { background-image: url("images/icons/injection5.svg") }
+.icon.icon-hospital11 { background-image: url("images/icons/hospital11.svg") }
+.icon.icon-hospital32 { background-image: url("images/icons/hospital32.svg") }
+.icon.icon-biology { background-image: url("images/icons/biology.svg") }
+
+
+
+
+
+/* TEST AREA */
+#header-wrapper {
+	background-color: #CBCCCA;
+}
+
+.tile {
+    width: 460px;
+	height: 400px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 1px solid #636462;
+	box-sizing: border-box;
+	background: white;
+}
+
+.tile-container .tile:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.tile.fullsize {
+	padding: 0px;
+}
+
+.tile .map {
+	height: 398px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+

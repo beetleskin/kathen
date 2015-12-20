@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: central\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-07 21:49+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_c;__ngettext:1,2;_n:1,2;esc_attr_e;_x\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "Error 404 - Page Not Found"
+msgstr ""
+
+#: 404.php:12
+msgid "Bad link: "
+msgstr ""
+
+#: 404.php:16
+msgid "Sorry, but page you requested has not been found."
+msgstr ""
+
+#: 404.php:19
+msgid "You can click back, visit our "
+msgstr ""
+
+#: 404.php:20
+msgid "home page"
+msgstr ""
+
+#: 404.php:20
+msgid ", or use search form:"
+msgstr ""
+
+#: archive.php:12
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:14
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:14
+msgid "F Y"
+msgstr ""
+
+#: archive.php:16
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:16
+msgid "Y"
+msgstr ""
+
+#: archive.php:18
+msgid "Blog Archives"
+msgstr ""
+
+#: archive.php:42
+#: category.php:39
+#: index.php:25
+#: tag.php:32
+msgid "Leave a reply"
+msgstr ""
+
+#: archive.php:42
+#: category.php:39
+#: index.php:25
+#: tag.php:32
+msgid "1 Reply"
+msgstr ""
+
+#: archive.php:42
+#: category.php:39
+#: index.php:25
+#: tag.php:32
+msgid "% Replies"
+msgstr ""
+
+#: archive.php:45
+#: category.php:43
+#: image.php:17
+#: index.php:30
+#: page.php:24
+#: single.php:27
+#: tag.php:36
+msgid "Posted on "
+msgstr ""
+
+#: archive.php:45
+#: author.php:34
+#: category.php:43
+#: image.php:17
+#: index.php:30
+#: single.php:27
+#: tag.php:36
+msgid " in "
+msgstr ""
+
+#: archive.php:51
+#: category.php:48
+#: functions.php:192
+#: index.php:34
+#: tag.php:42
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: archive.php:53
+#: category.php:50
+#: image.php:58
+#: index.php:36
+#: page.php:30
+#: single.php:32
+#: tag.php:44
+msgid "Pages:"
+msgstr ""
+
+#: archive.php:55
+#: category.php:52
+#: index.php:38
+#: single.php:34
+#: tag.php:46
+msgid "Edit post"
+msgstr ""
+
+#: archive.php:62
+#: category.php:58
+#: image.php:63
+#: index.php:44
+#: page.php:39
+#: single.php:40
+#: tag.php:52
+msgid "Top"
+msgstr ""
+
+#: archive.php:73
+#: tag.php:63
+msgid "Nothing found in this archive"
+msgstr "
+"
+
+#: author.php:12
+msgid "About: "
+msgstr ""
+
+#: author.php:21
+msgid "Website"
+msgstr "Сайт"
+
+#: author.php:25
+msgid "Profile"
+msgstr ""
+
+#: author.php:28
+msgid "Posts by "
+msgstr ""
+
+#: author.php:40
+msgid "No posts by this author."
+msgstr ""
+
+#: category.php:11
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: category.php:68
+msgid "Nothing found in this categpory"
+msgstr ""
+
+#: comments.php:4
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:12
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: comments.php:21
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:22
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:9
+msgid "Central Wordpress theme, Copyright"
+msgstr ""
+
+#: footer.php:10
+msgid "Central WordPress theme is licensed under the GPL."
+msgstr ""
+
+#: functions.php:18
+msgid "main menu"
+msgstr ""
+
+#: functions.php:43
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:50
+msgid "Choose file.."
+msgstr ""
+
+#: functions.php:51
+msgid "File selected"
+msgstr ""
+
+#: functions.php:52
+msgid "File is not selected"
+msgstr ""
+
+#: functions.php:75
+#: functions.php:103
+msgid "Slider"
+msgstr ""
+
+#: functions.php:98
+msgid "Settings saved."
+msgstr ""
+
+#: functions.php:107
+msgid "Choose category which you want display in slider"
+msgstr ""
+
+#: functions.php:108
+msgid "( for displaying a slides you need set a status \"draft\" for posts of chosen category which you want to see in slider )"
+msgstr ""
+
+#: functions.php:116
+msgid "Save Changes"
+msgstr ""
+
+#: functions.php:150
+msgid "Slide "
+msgstr ""
+
+#: functions.php:150
+msgid " have not chosen image. </br>You need to add an featured image for this post from \"Dashboard\" "
+msgstr ""
+
+#: functions.php:170
+msgid "sidebar"
+msgstr ""
+
+#: functions.php:171
+msgid "Left column to display the widgets"
+msgstr ""
+
+#: functions.php:216
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:216
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:229
+msgid "Post author"
+msgstr ""
+
+#: functions.php:235
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:240
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:245
+msgid "Edit"
+msgstr ""
+
+#: functions.php:249
+msgid "Reply"
+msgstr ""
+
+#: functions.php:263
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: functions.php:264
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: gallery-single-template.php:77
+msgid "Sorry, nothing found."
+msgstr ""
+
+#: gallery-single-template.php:103
+msgid "Image"
+msgstr ""
+
+#: gallery-single-template.php:103
+msgid "Download high resolution image"
+msgstr ""
+
+#: header.php:33
+msgid "image for header"
+msgstr ""
+
+#: header.php:33
+msgid "there is no image"
+msgstr ""
+
+#: header.php:52
+msgid "For a more correct display of information on the site you need to enable support of the JavaScript in the browser."
+msgstr ""
+
+#: image.php:9
+msgid "&larr; Previous image"
+msgstr ""
+
+#: image.php:10
+msgid "Next image &rarr;"
+msgstr ""
+
+#: image.php:17
+msgid "Back to "
+msgstr ""
+
+#: image.php:21
+msgid "See in full size: "
+msgstr ""
+
+#: image.php:21
+msgid "full size of "
+msgstr ""
+
+#: image.php:21
+msgid "px"
+msgstr ""
+
+#: index.php:51
+msgid "<< previous posts"
+msgstr ""
+
+#: index.php:51
+msgid "next posts >>"
+msgstr ""
+
+#: page.php:32
+msgid "Edit page"
+msgstr ""
+
+#: portfolio-post.php:151
+#: portfolio.php:136
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: portfolio.php:127
+msgid "Read more"
+msgstr ""
+
+#: search.php:10
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:34
+#, php-format
+msgid "You were trying to look for: %s"
+msgstr ""
+
+#: search.php:38
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: searchform.php:4
+msgid "Enter search keyword"
+msgstr ""
+
+#: sidebar.php:9
+msgid "Recent Posts"
+msgstr ""
+
+#: sidebar.php:19
+msgid "Recent Comments"
+msgstr ""
+
+#: sidebar.php:25
+msgid " on "
+msgstr ""
+
+#: sidebar.php:31
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:37
+msgid "Categories"
+msgstr ""
+
+#: single.php:20
+msgid "&larr;"
+msgstr ""
+
+#: single.php:21
+msgid "&rarr;"
+msgstr ""
+
+#: tag.php:9
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
