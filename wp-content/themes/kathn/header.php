@@ -44,7 +44,7 @@
 		 					Tel. <?php echo do_shortcode('[contact type="phone_number"]'); ?>
 		 				</a>
 		 			</div>
-		 			<?php echo do_shortcode('[sp_responsiveslider limit="-1"]'); ?>
+		 			<?php echo do_shortcode('[sp_responsiveslider limit="-1" effect="fade" pagination="false" navigation="false" speed="4000" autoplay="true" autoplay_interval="5000" loop="true"]'); ?>
 	 			</div>
 	 		</div>
 			<div class="clear"></div>

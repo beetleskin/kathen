@@ -126,10 +126,6 @@ ul.colored-list li:before {
 	text-align: left;
 }
 
-.slider-container {
-	
-}
-
 .slider-container > .main {
 	position: relative;
 }
@@ -138,6 +134,10 @@ ul.colored-list li:before {
 	width: 940px;
 	height: 300px;
 	overlfow: hidden;
+}
+
+.slider-container #slides > :not(.slidesjs-container) {
+	display: none !important;
 }
 
 .phone-floater {
@@ -348,7 +348,7 @@ ul.iconized-list li > .icon-text {
 	margin-right: 30px;
 	border-radius: 50%;
 	border: 2px solid #389D7D;
-	background: transparent url("images/icons/caduceus4.svg") no-repeat scroll 50% 50%;
+	background: transparent url("images/icons/asclepius.svg") no-repeat scroll 50% 50%;
 	background-size: 80% 80%;
 }
 
