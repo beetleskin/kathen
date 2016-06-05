@@ -4,7 +4,7 @@ Tags: address, map, responsive map, styled map, google map, responsive styled ma
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.3
-Tested up to: 4.3
+Tested up to: 4.5.1
 Stable tag: trunk
 Donate link: http://codecanyon.net/item/responsive-styled-google-maps-wordpress-plugin/3909576?ref=greenline
 
@@ -91,11 +91,24 @@ You can find more features in the extended, commercial version here: <a title="R
 3. Shortcode 
 
 == Changelog ==
+= 1.2 =
+* 2016/04/14
+* fixed the console warnings
+= 1.1 =
+* 2015/10/20
+* small fixes
 = 1.0 =
 * 2015/08/17
 * initial upload
 
 == Upgrade Notice ==
 
+= 1.2 =
+* 2016/04/14
+* fixed the console warnings
+= 1.1 =
+* 2015/10/20
+* small fixes
 = 1.0 =
-First release.
+* 2015/08/17
+* initial upload

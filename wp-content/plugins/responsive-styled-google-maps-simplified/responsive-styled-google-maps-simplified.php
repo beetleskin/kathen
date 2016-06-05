@@ -2,13 +2,12 @@
 /*
  * Plugin Name: Responsive Styled Google Maps Simplified
  * Description: A plugin which adds a responsive map (colored or black&white) to pages and posts using a simple shortcode. (free simplified version)
- * Version: 1.0
+ * Version: 1.2
  * Author: greenline
  * Author URI: http://codecanyon.net/user/greenline
  */
 
-function resmap_simp_plugin_row_meta($links, $file) 
-{
+function resmap_simp_plugin_row_meta($links, $file) {
     if ($file == plugin_basename(__FILE__)) {
         $documentation_link = '<a target="_blank" href="http://codecanyon.net/item/responsive-styled-google-maps-wordpress-plugin/3909576?ref=greenline" title="' 
                               . __('Buy the extended version', 'res_map') 
@@ -22,25 +21,23 @@ function resmap_simp_plugin_row_meta($links, $file)
 }
 add_filter('plugin_row_meta', 'resmap_simp_plugin_row_meta', 10, 2);   
 
-function resmap_simp_css() 
-{
+function resmap_simp_css() {
     wp_register_style('resmap_simp_css', plugins_url('includes/css/resmap.min.css', __FILE__), false, '1.0');
     wp_enqueue_style('resmap_simp_css');
 }
 add_action('wp_enqueue_scripts', 'resmap_simp_css');
  
-function resmap_simp_scripts() 
-{
+function resmap_simp_scripts() {
     // Register Google Maps API library depending if is a SSL connection or not 
     if (is_ssl()) {
             wp_register_script('googlemapsapi', 
-                              'https://maps-api-ssl.google.com/maps/api/js?sensor=false&v=3.exp&libraries=adsense,places',
+                              'https://maps-api-ssl.google.com/maps/api/js?v=3.23',
                                array('jquery'), 
                                null, 
                                true);
     } else {
             wp_register_script('googlemapsapi', 
-                              'http://maps.googleapis.com/maps/api/js?sensor=false&v=3.exp&libraries=adsense,places', 
+                              'http://maps.googleapis.com/maps/api/js?v=3.23', 
                               array('jquery'), 
                               null, 
                               true);
@@ -49,13 +46,11 @@ function resmap_simp_scripts()
 }
 add_action('wp_enqueue_scripts', 'resmap_simp_scripts');
 
-function resmap_simp_getIcon($value) 
-{
+function resmap_simp_getIcon($value) {
     return plugins_url('/includes/icons/red.png', __FILE__);
 }
 
-function resmap_simp_getStyleString($style) 
-{
+function resmap_simp_getStyleString($style) {
     $styleString;
     
     switch ($style) {
@@ -71,8 +66,7 @@ function resmap_simp_getStyleString($style)
     return $styleString;
 }
 
-function resmap_simp_cleanHtml($attr) 
-{
+function resmap_simp_cleanHtml($attr) {
     $attr = str_replace(array("\n", '"', "'", "{br}", "&lt;", "&gt;"), array(' ', '\"', "\'", "<br>", "<", ">"), $attr);
 
     return $attr;
@@ -105,27 +99,22 @@ function resmap_simp_shortcode($atts) {
 
     if ($atts['address'] != '') {
 		
-		$markers = '[';
 	    $address = resmap_simp_cleanHtml($atts['address']);
-        
-        $html = $address;
 
-        $markers .= '{
-                    address: \''. $address .'\', 
-                    key: \''.  $mapid  . '\',';
-
-        $markers .= 'html:"'. $html .'",
+        $markers = "[{
+                    address: '". $address . "', 
+                    key: '".  $mapid  . "',
+                    html: '" . $address . "',
                     popup: true,
                     flat: true,
                     icon: {
-                        image: \''. plugins_url('/includes/icons/red.png', __FILE__) .'\'
-                    }}';
-        $markers .= ']';
+                        image: '" . plugins_url('/includes/icons/red.png', __FILE__) . "'
+                    }}]";
     }
     ob_start();
     ?>
     <script type="text/javascript">
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function() {
     var mapdiv = jQuery("#responsive_map_<?php echo $mapid; ?>"); 
     mapdiv.gMapResp({
         maptype: google.maps.MapTypeId.ROADMAP,
@@ -141,7 +130,7 @@ function resmap_simp_shortcode($atts) {
         overviewMapControl: false,
         styles: <?php echo $atts['style']; ?>
      });
-  resmap_simp_fixDisplayInTabs(mapdiv, 'true');
+    resmap_fixDisplayInTabs(mapdiv, 'true');
   });
   window.onresize = function() {
         jQuery('.responsive-map').each(function(i, obj) {
@@ -154,7 +143,7 @@ function resmap_simp_shortcode($atts) {
         });
   };
   </script>
-  <div id="responsive_map_<?php echo $mapid; ?>" class="responsive-map" style="<?php echo $dimensions; ?>;"></div>
+  <div id="responsive_map_<?php echo $mapid; ?>" class="responsive-map" style="<?php echo $dimensions; ?>"></div>
   <?php return ob_get_clean();
 }
 add_shortcode('resmap', 'resmap_simp_shortcode');
